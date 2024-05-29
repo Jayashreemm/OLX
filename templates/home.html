@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carved - Know Your Car Price</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: #ff69b4;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff69b4;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://cdn.wallpapersafari.com/51/13/5OcUPQ.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            animation: fadeInUp 1s;
+        }
+
+        .btn {
+            background-color: #ff69b4;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+            animation: fadeInUp 1s;
+        }
+
+        .btn:hover {
+            background-color: #ff1493;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Carved</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#price">Know Your Car Price</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Carved</h2>
+            <p>Your one-stop solution for knowing the prices of second-hand cars.</p>
+            <a href="#price" class="btn">Know Your Car Price</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Carved</h2>
+        <p>Carved is a revolutionary platform that provides accurate pricing for second-hand cars. Whether you're buying or selling, Carved helps you make informed decisions with reliable data and insights.</p>
+    </section>
+
+    <section id="price">
+        <h2>Know Your Car Price</h2>
+        <p>Get an instant estimate of your car's value by entering your car details.</p>
+        <a href="#contact" class="btn">Contact Us</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us for more information and support.</p>
+        <a href="mailto:support@carved.com" class="btn">Email Us</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Carved. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
